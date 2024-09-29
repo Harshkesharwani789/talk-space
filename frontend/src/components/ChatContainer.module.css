@@ -1,0 +1,50 @@
+.chatContainer {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.welcomeMessage h2 {
+  color: #1877f2;
+  margin-bottom: 0.5rem;
+}
+
+.welcomeMessage p {
+  color: #65676b;
+  margin-bottom: 2rem;
+}
+
+.illustration {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .chatContainer {
+    height: calc(100vh - 300px);
+  }
+}

@@ -1,0 +1,56 @@
+.myChats {
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.myChats h2 {
+  color: #1877f2;
+  margin-bottom: 1rem;
+}
+
+.chatList {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+.chatItem {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatItem:hover {
+  background-color: #f0f2f5;
+}
+
+.selected {
+  background-color: #e7f3ff;
+}
+
+.chatName {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.latestMessage {
+  font-size: 0.9rem;
+  color: #65676b;
+}
+
+.loading {
+  text-align: center;
+  color: #65676b;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .myChats {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

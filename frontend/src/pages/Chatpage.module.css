@@ -1,0 +1,21 @@
+.chatpage {
+  display: flex;
+  height: 100vh;
+}
+
+.chatSection {
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .chatpage {
+    flex-direction: column;
+  }
+
+  .chatSection {
+    flex-direction: column;
+  }
+}
