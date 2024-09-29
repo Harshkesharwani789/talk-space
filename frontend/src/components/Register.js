@@ -14,7 +14,7 @@ export default function Register() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleRegister = async (e: React.FormEvent) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
@@ -34,7 +34,7 @@ export default function Register() {
       toast.success("Registration successful!");
       navigate("/");
     } catch (error) {
-      console.log(error)
+      console.log(error);
       toast.error(error.response?.data?.error || "Registration failed.");
     } finally {
       setLoading(false);

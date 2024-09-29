@@ -20,7 +20,7 @@ export default function Login() {
     }
   }, [navigate, setIsAuthenticated]);
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
@@ -45,7 +45,7 @@ export default function Login() {
   return (
     <div className={styles.loginContainer}>
       <form onSubmit={handleLogin} className={styles.loginForm}>
-        <h2>Welcome Back</h2>
+        <h2>Welcome Back to Chat</h2>
         <input
           type="email"
           placeholder="Email"

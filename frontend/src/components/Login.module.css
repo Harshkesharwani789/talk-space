@@ -3,41 +3,41 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f2f5;
+  background: linear-gradient(135deg, #a8e0ff 0%, #b4e3ff 100%); /* Gradient background */
 }
 
 .loginForm {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for the form */
+  padding: 2.5rem; /* Slightly more padding for a spacious feel */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
   width: 100%;
   max-width: 400px;
 }
 
 .loginForm h2 {
-  margin-bottom: 1.5rem;
-  color: #1877f2;
-  font-size: 1.5rem;
+  margin-bottom: 2rem; /* Increased spacing below the title */
+  color: #007bff; /* Blue color for a chat feel */
+  font-size: 1.75rem; /* Larger font size for emphasis */
   text-align: center;
 }
 
 .loginForm input {
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #dddfe2;
-  border-radius: 6px;
+  margin-bottom: 1.5rem; /* More space between inputs */
+  border: 1px solid #ced4da; /* Lighter border color */
+  border-radius: 8px; /* Slightly larger border radius */
   font-size: 1rem;
 }
 
 .loginForm button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #1877f2;
+  background-color: #007bff; /* Primary button color for a chat app */
   color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px; /* Rounded corners for buttons */
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -45,22 +45,22 @@
 }
 
 .loginForm button:hover {
-  background-color: #166fe5;
+  background-color: #0056b3; /* Darker blue for hover effect */
 }
 
 .loginForm button:disabled {
-  background-color: #9cb3d8;
+  background-color: #007bff99; /* Semi-transparent when disabled */
   cursor: not-allowed;
 }
 
 .loginForm p {
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* More space above the text */
   text-align: center;
-  color: #606770;
+  color: #6c757d; /* Gray color for secondary text */
 }
 
 .link {
-  color: #1877f2;
+  color: #007bff; /* Match the primary color */
   cursor: pointer;
   text-decoration: underline;
 }
